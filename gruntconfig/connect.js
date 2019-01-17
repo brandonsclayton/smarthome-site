@@ -10,7 +10,7 @@ const connect = {
         `${config.build}/${config.src}`,
       ],
       keepalive: false,
-      port: 3000,
+      port: process.env.PORT || 3000,
     }
   }
 };
