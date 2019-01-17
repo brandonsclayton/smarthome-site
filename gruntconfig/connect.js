@@ -15,13 +15,13 @@ const connect = {
   },
   heroku: {
     options: {
+      useAvailablePort: true,
       base: [
         config.htdocs,
         `${config.build}/${config.src}`,
       ],
       keepalive: true,
-      port: process.env.PORT || 3000,
-      hostname: '*'
+      port: process.env.PORT,
     }
   }
 };
