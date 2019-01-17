@@ -6,12 +6,14 @@ const config = {
   browserify: require('./browserify'),
   clean: require('./clean'),
   connect: require('./connect'),
+  uglify: require('./uglify'),
   watch: require('./watch'),
 
   tasks: [
     'grunt-browserify',
     'grunt-contrib-clean',
     'grunt-contrib-connect',
+    'grunt-contrib-uglify-es',
     'grunt-contrib-watch',
   ]
 };

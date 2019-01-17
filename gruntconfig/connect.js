@@ -13,7 +13,7 @@ const connect = {
       port: 3000,
     }
   },
-  heroku: {
+  dist: {
     options: {
       useAvailablePort: true,
       base: [
