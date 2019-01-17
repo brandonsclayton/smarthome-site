@@ -7,10 +7,29 @@ module.exports = function(grunt) {
   gruntConfig.tasks.forEach(grunt.loadNpmTasks);
   
   grunt.initConfig(gruntConfig);
-  
-  grunt.registerTask('default', ['clean', 'browserify', 'connect:dev', 'watch']);
+ 
+  /* Default tasks for development */
+  grunt.registerTask('default', [
+    'dev',
+    'connect:dev',
+    'watch'
+  ]);
 
-  grunt.registerTask('build', ['clean', 'browserify']);
+  /* Build development library */
+  grunt.registerTask('dev', [
+    'clean',
+    'browserify',
+  ]);
 
-  grunt.registerTask('heroku', ['clean', 'browserify', 'connect:heroku']);
+  /* Build distribution library */
+  grunt.registerTask('build', [
+    'dev',
+    'uglify',
+  ]);
+
+  /* Starts distibution server */
+  grunt.registerTask('dist', [
+    'build',
+    'connect:dist'
+  ]);
 };

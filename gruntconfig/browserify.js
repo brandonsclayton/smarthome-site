@@ -12,9 +12,9 @@ const browserify = {
   },
   source: {
     src: [
-      `${config.src}/**/*.js`
+      `${config.src}/**/*.js`,
     ],
-    dest: `${config.build}/${config.src}/smarthome-js.js`,
+    dest: `${config.build}/${config.src}/${config.mainJS}`,
   }
 };
 

@@ -5,6 +5,7 @@ const config = {
   src: 'src',
   htdocs: 'src/htdocs',
   port: 3000,
+  mainJS: 'smarthome-site.js',
 };
 
 module.exports = config;
