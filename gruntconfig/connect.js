@@ -15,8 +15,6 @@ const connect = {
   },
   heroku: {
     options: {
-      debug: true,
-      useAvailablePort: true,
       base: [
         config.htdocs,
         `${config.build}/${config.src}`,
