@@ -19,7 +19,7 @@ const connect = {
         config.htdocs,
         `${config.build}/${config.src}`,
       ],
-      keepalive: true,
+      open: true,
       port: process.env.PORT,
     }
   }
