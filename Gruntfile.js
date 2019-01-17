@@ -12,7 +12,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build', ['clean', 'browserify']);
 
-  grunt.registerTask('heroku', ['connect:heroku']);
-
-  console.log(`\n\n --------- PORT: ${process.env.PORT} \n\n`);
+  grunt.registerTask('heroku', ['clean', 'browserify', 'connect:heroku']);
 };
