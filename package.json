@@ -4,7 +4,7 @@
   "description": "Smart home Website",
   "main": "index.js",
   "scripts": {
-    "start": "grunt",
+    "start": "grunt heroku",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {

@@ -8,5 +8,7 @@ module.exports = function(grunt) {
   
   grunt.initConfig(gruntConfig);
   
-  grunt.registerTask('default', ['clean', 'browserify', 'connect', 'watch']);
+  grunt.registerTask('default', ['clean', 'browserify', 'connect:dev', 'watch']);
+
+  grunt.registerTask('heroku', ['clean', 'browserify', 'connect:heroku']);
 };
