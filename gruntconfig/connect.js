@@ -20,6 +20,7 @@ const connect = {
         `${config.build}/${config.src}`,
       ],
       open: true,
+      keepalive: true,
       port: process.env.PORT,
     }
   }
