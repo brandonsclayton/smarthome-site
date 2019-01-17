@@ -18,7 +18,7 @@ const connect = {
       useAvailablePort: true,
       base: [
         config.htdocs,
-        `${config.build}/${config.src}`,
+        `${config.dist}/${config.src}`,
       ],
       keepalive: true,
       port: process.env.PORT,
