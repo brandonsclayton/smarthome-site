@@ -19,9 +19,9 @@ const connect = {
         config.htdocs,
         `${config.build}/${config.src}`,
       ],
-      open: true,
       keepalive: true,
       port: process.env.PORT,
+      hostname: '0.0.0.0'
     }
   }
 };
