@@ -1,0 +1,26 @@
+{
+  "name": "smarthome-site",
+  "version": "1.0.0",
+  "description": "Smart home Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brandonsclayton/smarthome-site.git"
+  },
+  "author": "Brandon Clayton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonsclayton/smarthome-site/issues"
+  },
+  "homepage": "https://github.com/brandonsclayton/smarthome-site#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-browserify": "^5.3.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}
