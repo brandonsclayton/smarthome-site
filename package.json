@@ -4,8 +4,7 @@
   "description": "Smart home Website",
   "main": "index.js",
   "scripts": {
-    "postinstall": "grunt build",
-    "start": "grunt heroku"
+    "postinstall": "grunt build"
   },
   "engines": {
     "node": "8.10.0"
