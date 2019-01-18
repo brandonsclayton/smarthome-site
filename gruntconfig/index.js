@@ -1,4 +1,5 @@
 'use strict';
+
 const grunt = require('grunt');
 
 const config = {
