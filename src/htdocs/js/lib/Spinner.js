@@ -1,6 +1,8 @@
 
 const d3 = require('d3');
-const $ = require('jquery');
+const $ = require('jquery'); 
+global.jQuery = $;
+require('bootstrap');
 
 class Spinner {
  
