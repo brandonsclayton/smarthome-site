@@ -5,7 +5,7 @@ const config = require('./config');
 const watch = {
   scripts: {
     files: [
-      `${config.src}/**/*.js`
+      `${config.src}/**/*.js`,
     ],
     tasks: ['browserify']
   },
@@ -14,6 +14,12 @@ const watch = {
       'Gruntfile.js',
       'gruntconfig/**/*.js',
     ]
+  },
+  browserify: {
+    files: [
+      'gruntconfig/browserify.js'
+    ],
+    tasks: ['browserify']
   }
 };
 

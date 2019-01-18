@@ -10,7 +10,8 @@ const connect = {
         `${config.build}/${config.src}`,
       ],
       keepalive: false,
-      port: 3000,
+      port: config.port,
+      open: `http://localhost:${config.port}/`
     }
   },
   dist: {
