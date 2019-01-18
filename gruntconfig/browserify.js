@@ -15,7 +15,7 @@ const EXPORTS = [
   'axios'
 ]);
 
-
+console.log(EXPORTS);
 const browserify = {
   options: {
     browserifyOptions: {

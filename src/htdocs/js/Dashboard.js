@@ -70,7 +70,7 @@ class Dashboard {
     Promise.all([ messageCall, statsCall ]).then((result) => {
       this.spinner.off();
       this.setTemperaturePanel(result[0].data);
-      this.setStatSelectMenu(result[1].data);
+      // this.setStatSelectMenu(result[1].data);
       this.showCards();
     }).catch((errorMessage) => {
       try {
@@ -148,6 +148,7 @@ class Dashboard {
   }
 
   setStatSelectMenu(result) {
+    console.log(result);
     d3.select(this.statsRoomSelectEl)
         .selectAll('option')
         .data(result.response)
@@ -175,8 +176,8 @@ class Dashboard {
     d3.select(this.tempStatusEl)
         .classed('hidden', false);
 
-    d3.select(this.tempStatsEl)
-        .classed('hidden', false);
+    // d3.select(this.tempStatsEl)
+    //     .classed('hidden', false);
   }
 
 }
