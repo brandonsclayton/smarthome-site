@@ -1,0 +1,22 @@
+
+<nav class="mat-elevation-z6">
+  <mat-toolbar color="primary">
+
+    <mat-icon
+        *ngIf="headerMenu"
+        mat-icon-button
+        [matMenuTriggerFor]="appMenu"
+        class="pointer">
+      menu
+    </mat-icon>
+
+    <mat-menu #appMenu="matMenu">
+      <button
+          mat-menu-item
+          *ngFor="let headerItem of headerMenu"
+          [routerLink]="[headerItem.routerLink]">
+        {{ headerItem.display }}
+      </button>
+    </mat-menu>
+  </mat-toolbar>
+</nav>
